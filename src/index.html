@@ -3,22 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>DJI|MINSK</title>
+    <meta name="description" content="Autorized retail store">
+    <meta property="og:title" content="DJI|MINSK">
+    <meta property="og:description" content="Autorized retail store">
+    <meta property="og:image" content="img/meta-img.jpg">
+    <meta property="og:image:alt" content="DJI|MINSK">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- libs -->
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Autorized retail store</title>
 </head>
 
 <body>
 
     <div class="wrapper" style="background-color: #F7F8F9;">
-        @@include('./blocks/modules/header/_header.html')
+        @@include('./_template/modules/header/_header.html')
 
-        @@include('./blocks/modules/burger/burger-menu/_burger-menu.html')
+        @@include('./_template/modules/burger/burger-menu/_burger-menu.html')
 
         <div class="drop-search">
             <div class="drop-search__top flex jcsb aic">
@@ -45,22 +59,21 @@
         </div>
 
         <main class="page">
-            @@include('./blocks/modules/top-banner/_top-banner.html')
+            @@include('./_template/modules/top-banner/_top-banner.html')
 
-            @@include('./blocks/modules/about/_about.html')
+            @@include('./_template/modules/about/_about.html')
 
-            @@include('./blocks/modules/product/_product.html')
+            @@include('./_template/modules/product/_product.html')
             
 
-            @@include('./blocks/modules/news/_news.html')
+            @@include('./_template/modules/news/_news.html')
         </main>
 
-        @@include('./blocks/modules/footer/_footer.html')
+        @@include('./_template/modules/footer/_footer.html')
+
+        @@include('./_template/modules/modal/_modal.html')
     </div>
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
-
 </html>

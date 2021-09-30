@@ -1,6 +1,36 @@
 .section-title {
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 64px;
     color: #000;
+    margin-bottom: 20px;
+
+    h2 {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    p {
+        margin-top: 15px;
+    }
+
+    @media (max-width: 1024px) {
+        h2 {
+            line-height: 24px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        & {
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
 }

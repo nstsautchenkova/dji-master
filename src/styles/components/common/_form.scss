@@ -1,16 +1,236 @@
-.form {
-    &__input {
+@mixin placeholder {
+    font: {
+        family: 'Museo Sans Cyrl 300';
+        size: 14px;
+        weight: normal;
     }
 
-    &__label {
-    }
+    color: #6B6F81;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
 
-    &__textarea {
+@media (max-width: 350px) {
+    @mixin placeholder {
+        font: {
+            size: 12px;
+        }
     }
 }
 
-.input {
+@mixin placeholder-focus {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
-.label {
+form {
+    .form-group {
+        position: relative;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .form-control {
+            font: {
+                family: 'Museo Sans Cyrl 300';
+                size: 12px;
+                weight: normal;
+            }
+
+            color: #333;
+            line-height: 17px;
+            text-overflow: ellipsis;
+
+            width: 100%;
+            background: transparent;
+            border:1px solid #F7F8F9;
+            border-radius: 3px;
+            padding: 11px 15px 10px;
+
+
+            &:hover {
+                border: 1px solid #1AA0E8;
+                color: #333;
+            }
+
+            @media (max-width: 350px) {
+                & {
+                    font: {
+                        size: 12px;
+                    }
+
+                    line-height: 14px;
+                    padding: 7px 10px;
+                }
+            }
+        }
+
+        .validation {
+            display: none;
+            position: absolute;
+            font-size: 11px;
+            line-height: 13px;
+            color: #E73C3C;
+            right: 15px;
+
+            @media (max-width: 350px) {
+                & {
+                    font-size: 9px;
+                    line-height: 11px;
+                }
+            }
+        }
+
+        &.validation-error {
+            .form-control {
+                border: 1px solid #E73C3C !important;
+            }
+
+            .validation {
+                display: block;
+            }
+        }
+    }
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+form input.form-control {
+    &::-webkit-input-placeholder {
+        @include placeholder;
+    }
+
+    &::-moz-placeholder {
+        @include placeholder;
+    }
+
+    &:-moz-placeholder {
+        @include placeholder;
+    }
+
+    &:-ms-input-placeholder {
+        @include placeholder;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        @include placeholder-focus;
+    }
+
+    &:focus::-moz-placeholder {
+        @include placeholder-focus;
+    }
+
+    &:focus:-moz-placeholder {
+        opacity: 0;
+        -moz-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
+    }
+
+    &:focus:-ms-input-placeholder {
+        @include placeholder-focus;
+    }
+
+    &:hover::-webkit-input-placeholder {
+        color: #333;
+    }
+
+    &:hover::-webkit-input-placeholder {
+        color: #333;
+    }
+
+    &:hover::-moz-placeholder {
+        color: #333;
+    }
+
+    &:hover:-moz-placeholder {
+        color: #333;
+    }
+
+    &:hover:-ms-input-placeholder {
+        color: #333;
+    }
+}
+
+form textarea.form-control {
+    &::-webkit-input-placeholder {
+        @include placeholder;
+    }
+
+    &::-moz-placeholder {
+        @include placeholder;
+    }
+
+    &:-moz-placeholder {
+        @include placeholder;
+    }
+
+    &:-ms-input-placeholder {
+        @include placeholder;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        @include placeholder-focus;
+    }
+
+    &:focus::-moz-placeholder {
+        @include placeholder-focus;
+    }
+
+    &:focus:-moz-placeholder {
+        opacity: 0;
+        -moz-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
+    }
+
+    &:focus:-ms-input-placeholder {
+        @include placeholder-focus;
+    }
+
+    &:hover::-webkit-input-placeholder {
+        color: #333;
+    }
+
+    &:hover::-webkit-input-placeholder {
+        color: #333;
+    }
+
+    &:hover::-moz-placeholder {
+        color: #333;
+    }
+
+    &:hover:-moz-placeholder {
+        color: #333;
+    }
+
+    &:hover:-ms-input-placeholder {
+        color: #333;
+    }
+}
+
+@media (max-width: 350px) {
+    .form {
+        .form-group {
+            margin-bottom: 10px;
+
+            .validation {
+                display: none !important;
+            }
+        }
+    }
 }
