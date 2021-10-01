@@ -1470,7 +1470,7 @@ section {
 }
 
 .wrapper {
-  position: relative;
+  /* position: relative; */
   overflow-x: hidden;
   /* @supports ((-webkit-backdrop-filter: blur(31px)) or (backdrop-filter: blur(31px))) {
       background: #fff;
