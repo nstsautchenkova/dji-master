@@ -2308,7 +2308,7 @@ form textarea.form-control:hover:-ms-input-placeholder {
 
 .drop-search {
   position: fixed;
-  top: -100%;
+  top: -1000px;
   left: 0;
   right: 0;
   z-index: 101;
@@ -3989,10 +3989,6 @@ form textarea.form-control:hover:-ms-input-placeholder {
 
   .page {
     padding-top: 88px;
-  }
-
-  .drop-search {
-    display: none !important;
   }
 
   .header {
