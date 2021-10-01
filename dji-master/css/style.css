@@ -1203,6 +1203,16 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.swiper-button-prev:focus,
+.swiper-button-prev:active {
+  outline: none;
+}
+
+.swiper-button-next:focus,
+.swiper-button-next:active {
+  outline: none;
+}
+
 /* %vertical-align {
     display: flex;
     align-items: center;
@@ -4319,6 +4329,10 @@ form textarea.form-control:hover:-ms-input-placeholder {
   .about-card--horizontal .about-card__content {
     padding: 30px 20px 23px;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-card--horizontal {
+    margin-top: 15px;
   }
 
   .about-card--horizontal .about-card__description {
