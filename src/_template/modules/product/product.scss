@@ -22,6 +22,9 @@
                 margin-bottom: 5px;
             }
         }
+        @media(max-width: 575px) {
+            grid-template-columns: repeat(5, 260px);
+        }
     }
 }
 
@@ -50,7 +53,7 @@
 
     @media(max-width: 575px) {
         min-height: 307px;
-        padding: 27px 5px 10px;
+        padding: 70px 20px 20px;
     }
 
     @media (any-hover: hover) {
@@ -69,8 +72,9 @@
         justify-content: space-between;
 
         @media(max-width: 575px) {
-            top: 5px;
-            padding: 0 5px;
+            top:20px;
+            padding: 0 20px;
+            justify-content: flex-start;
         }
     }
 
@@ -125,9 +129,9 @@
         margin: 0 auto 15px;
 
         @media(max-width: 575px) {
-            width: 135px;
-            height: 135px;
-            margin-bottom: 6px;
+            width: 152px;
+            height: 171px;
+            margin-bottom: 30px;
         }
 
         img {
@@ -156,9 +160,7 @@
         }
 
         @media(max-width: 575px) {
-            font-size: 10px;
-            line-height: 14px;
-            margin-bottom: 7px;
+            margin-bottom: 15px;
         }
     }
 
@@ -167,7 +169,7 @@
         margin-bottom: 20px;
 
         @media(max-width: 575px) {
-            margin-bottom: 11px;
+            margin-bottom: 20px;
         }
     }
 
@@ -175,10 +177,6 @@
         display: flex;
         align-items: center;
         margin-bottom: 10px;
-
-        @media(max-width: 575px) {
-            margin-bottom: 4px;
-        }
     }
 
     // .product-card__new-price
@@ -188,10 +186,6 @@
         //font-weight: 600;
         font-size: 18px;
         line-height: 21px;
-
-        @media(max-width: 575px) {
-            font-size: 11px;
-        }
     }
 
     // .product-card__old-price
@@ -204,10 +198,6 @@
         text-decoration-line: line-through;
         color: #6B6F81;
         margin-left: 7px;
-
-        @media(max-width: 575px) {
-            font-size: 8px;
-        }
 
         &:before {
             content: '';
@@ -231,10 +221,9 @@
         color: #464855;
 
         @media(max-width: 575px) {
-            padding-left: 5px;
-            padding-right: 5px;
-            font-size: 8px;
-            line-height: 16px;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 2px 5px;
         }
     }
 
@@ -248,17 +237,11 @@
         font-family: 'Museo Sans Cyrl 700';
         color: #fff;
         text-transform: uppercase;
+        height: 39px;
 
         @media(max-width: 1024px) {
             padding-left: 5px;
             padding-right: 5px;
-        }
-
-        @media(max-width: 575px) {
-            font-size: 8px;
-            line-height: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
         }
 
         &--disabled {
@@ -279,10 +262,6 @@
             display: none;
             width: 116px;
             margin: 0 auto;
-
-            @media(max-width: 575px) {
-                width: 65px;
-            }
         }
 
         &--disabled,

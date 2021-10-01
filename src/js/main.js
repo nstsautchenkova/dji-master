@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', () => {
             el: '.swiper-scrollbar',
             hide: true,
         },
-    });
+    }); 
 
     const bannerSlider = new Swiper('.banner-slider', {
         slidesPerView: 1,

@@ -58,6 +58,7 @@
 
 .counter {
     background-color: #F5F5F5;
+    height: 39px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -72,11 +73,6 @@
         width: 100%;
         height: 100%;
         text-align: center;
-
-        @media(max-width: 575px) {
-            width: 10px;
-            height: 10px;
-        }
 
         &.minus-btn {
 
@@ -98,19 +94,11 @@
         &:before {
             width: 8px;
             height: 1px;
-
-            @media(max-width: 575px) {
-                width: 5px;
-            }
         }
 
         &:after {
             width: 1px;
             height: 8px;
-
-            @media(max-width: 575px) {
-                height: 5px;
-            }
         }
     }
 
@@ -125,12 +113,7 @@
         font-size: 13px;
         line-height: 21px;
         color: #424242;
-        margin: 0 5px;
+        margin: 0;
 
-        @media(max-width: 575px) {
-            font-size: 10px;
-            line-height: 21px;
-            margin: 0 2.5px;
-        }
     }
 }
