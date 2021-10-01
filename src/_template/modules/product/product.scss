@@ -40,6 +40,7 @@
     transition: .3s box-shadow;
     display: flex;
     flex-direction: column;
+    background: #fff;
 
     &:last-child {
         border-right: 0.5px solid #DDDDDD;
@@ -70,6 +71,7 @@
         left: 0;
         display: flex;
         justify-content: space-between;
+        
 
         @media(max-width: 575px) {
             top:20px;
@@ -82,13 +84,14 @@
 
     &__label {
         display: inline-block;
-        padding: 2px 8px;
+        padding: 6px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 10px;
-        line-height: 20px;
+        line-height: 12px;
         color: #fff;
+        text-transform: uppercase;
 
         @media(max-width: 575px) {
             font-size: 8px;
