@@ -1443,8 +1443,12 @@ section {
   scrollbar-width: none;
   position: relative;
   z-index: 5;
-  margin-bottom: -10px;
-  padding-bottom: 10px;
+}
+
+.mobile-scrolled::-webkit-scrollbar {
+  width: 0;
+  height: 5px;
+  -webkit-appearance: none;
 }
 
 .mobile-scrolled::-webkit-scrollbar-thumb {
@@ -1455,27 +1459,6 @@ section {
 .mobile-scrolled::-webkit-scrollbar-track {
   border-radius: 5px;
   background-color: transparent;
-}
-
-.mobile-scrolled::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background-color: transparent;
-}
-
-.mobile-scrolled::-webkit-scrollbar {
-  width: 0;
-  height: 5px;
-}
-
-.mobile-scrolled {
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-  scrollbar-width: none;
-}
-
-.mobile-scrolled {
-  position: relative;
-  z-index: 5;
 }
 
 .container {
