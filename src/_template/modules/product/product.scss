@@ -71,7 +71,7 @@
         top: 18px;
         left: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         
 
         @media(max-width: 575px) {
@@ -93,6 +93,7 @@
         line-height: 12px;
         color: #fff;
         text-transform: uppercase;
+        white-space: nowrap;
 
         @media(max-width: 575px) {
             font-size: 8px;
@@ -180,13 +181,13 @@
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        white-space: nowrap;
     }
 
     // .product-card__new-price
 
     &__new-price {
         font-family: 'Museo Sans Cyrl 700';
-        //font-weight: 600;
         font-size: 18px;
         line-height: 21px;
     }
@@ -194,7 +195,6 @@
     // .product-card__old-price
 
     &__old-price {
-        display: none;
         position: relative;
         font-size: 12px;
         line-height: 21px;
@@ -212,7 +212,6 @@
     // .product-card__economy
 
     &__economy {
-        display: none;
         border: 2px solid $red;
         padding: 2px 6px;
         font-family: 'Montserrat',
@@ -222,6 +221,7 @@
         line-height: 16px;
         text-align: center;
         color: #464855;
+        white-space: nowrap;
 
         @media(max-width: 575px) {
             font-size: 12px;
@@ -266,16 +266,6 @@
             width: 116px;
             margin: 0 auto;
         }
-
-        &--disabled,
-        &--basket,
-        &--preorder {
-            .sale-card {
-                &__buttons {
-                    display: none;
-                }
-            }
-        }
     }
 
     // .product-card__buttons
@@ -297,46 +287,40 @@
         }
     }
 
-    &--preorder {
-        .product-card {
-            &__buttons {
-                display: none;
-            }
-
-            &__btn--preorder {
-                display: block;
-            }
-        }
-    }
-
     &--out-of-production {
         .product-card {
             &__new-price {
                 color: #C4C4C4;
             }
         }
-    }
-
-    &--out-of-production,
-    &--in-basket {
-        .product-card {
-
-            &__labels,
-            &__buttons {
-                display: none;
-            }
-        }
-    }
-
-    &--out-of-production {
         .product-card__btn--disabled {
             display: block;
+        }
+        .product-card__buttons{
+            display: none;
+        }
+        .product-card__btn--basket{
+            display: none;
         }
     }
 
     &--in-basket {
         .product-card__btn--basket {
             display: block;
+        }
+        .product-card__buttons{
+            display: none;
+        }
+    }
+    &--preorder{
+        .product-card__btn--preorder{
+            display: block;
+        }
+        .product-card__buttons{
+            display: none;
+        }
+        .product-card__btn--basket{
+            display: none;
         }
     }
 }

@@ -273,3 +273,13 @@
         }
     }
 }
+.footer__menu-item.footer__social{
+    display: flex;
+    align-items: center;
+    .footer__inst{
+        margin-left: 5px;
+        display: block;
+        position: relative;
+        top: 1px;
+    }
+}

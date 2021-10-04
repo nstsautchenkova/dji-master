@@ -494,7 +494,7 @@ window.addEventListener('DOMContentLoaded', () => {
             el: '.swiper-scrollbar',
             hide: true,
         },
-    }); 
+    });
 
     const bannerSlider = new Swiper('.banner-slider', {
         slidesPerView: 1,
@@ -563,4 +563,43 @@ $('.modal-preorder .form-submit').click(function () {
         $('.modal-preorder .form-submit').attr('data-target', '.modal-send__preorder');
         $('.modal-preorder .form-submit').attr('data-dismiss', 'modal');
     })
+});
+
+//modal-quick-order
+$('.modal-quick-order .form-submit').click(function () {
+    $(".modal-quick-order .form-required").each(function (i) {
+        if (this.value == '') {
+            $(this).parents('.form-group').addClass('validation-error');
+            $('.modal-quick-order .form-submit').addClass('btn-disabled');
+        } else {
+            $(this).parents('.form-group').removeClass('validation-error');
+            $('.modal-quick-order .form-submit').removeClass('btn-disabled');
+            $('.modal-quick-order .form-submit').attr('data-toggle', 'modal');
+
+            $('.modal-quick-order .form-submit').attr('data-target', '.modal-send__feedback');
+            $('.modal-quick-order .form-submit').attr('data-dismiss', 'modal');
+        }
+    });
+
+    $(".form-required").change(function (i) {
+        $(this).parents('.form-group').removeClass('validation-error');
+        $('.modal-quick-order .form-submit').removeClass('btn-disabled');
+        $('.modal-quick-order .form-submit').attr('data-toggle', 'modal');
+        $('.modal-quick-order .form-submit').attr('data-target', '.modal-send__feedback');
+        $('.modal-quick-order .form-submit').attr('data-dismiss', 'modal');
+    })
+});
+
+
+// basket-product__clear
+$('.basket-product__clear').click(function () {
+    $(this).parents('.basket-product').addClass('hide')
+});
+$('.clear-basket').click(function () {
+    $(this).parents('.basket-page__container').addClass('hide')
+});
+
+// product-card__add
+$('.product-card__add').click(function () {
+    $(this).parents('.product-card').addClass('product-card--in-basket')
 });
