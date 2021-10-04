@@ -1467,6 +1467,17 @@ section {
   height: 5px;
 }
 
+.mobile-scrolled {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+.mobile-scrolled {
+  position: relative;
+  z-index: 5;
+}
+
 .container {
   width: 1450px;
   max-width: 100%;
