@@ -1,7 +1,7 @@
 .news {
     background: #fff;
     @media(max-width: 575px) {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
     // .news__title
@@ -23,20 +23,20 @@
 
         @media(max-width: 1024px) {
             margin-top: 18px;
-            margin-bottom: 20px;
+            margin-bottom: 0;
             grid-template-columns: repeat(4, 330px);
         }
 
         @media(max-width: 770px) {
             margin-top: 30px;
-            margin-bottom: 25px;
+            margin-bottom: 0;
             grid-template-columns: repeat(4, 354px);
             grid-gap: 15px;
         }
 
         @media(max-width: 575px) {
             margin-top: 15px;
-            margin-bottom: 20px !important;
+            margin-bottom: 0 !important;
             grid-template-columns: repeat(4, 275px);
         }
     }
@@ -46,6 +46,9 @@
         padding: 10px 40px;
         font-size: 14px;
         line-height: 24px;
+        @media(max-width: 1024px) {
+            margin-top: 10px;
+        }
     }
 }
 

@@ -24,7 +24,7 @@ body {
         overflow-y: hidden;
     }
 
-	-webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
 
 h1,
@@ -119,98 +119,30 @@ section {
     background: #fff;
     padding-bottom: 20px;
 }
-
-.mobile-scrolled {
-    -webkit-overflow-scrolling:touch;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    scrollbar-width: none;
-    position: relative;
-    z-index: 5;
+.mCSB_horizontal.mCSB_inside>.mCSB_container {
+    margin-bottom: 20px;
 }
-.mobile-scrolled::-webkit-scrollbar {
-    width: 0;
+.mCSB_scrollTools.mCSB_scrollTools_horizontal{
     height: 5px;
-    -webkit-appearance: none;
 }
-.mobile-scrolled::-webkit-scrollbar-thumb {
-    background: #1AA0E8;
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+    background: transparent;
+    margin: 0;
+    height: 5px;
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #1AA0E8 !important;
     border-radius: 5px;
+    height: 5px;
+    margin: 0;
 }
 
-.mobile-scrolled::-webkit-scrollbar-track {
-    border-radius: 5px;
-    background-color: transparent;
-}
-.mobile-scrolled::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-.mobile-scrolled::-webkit-scrollbar:vertical {
-    width: 12px;
-}
-
-.mobile-scrolled::-webkit-scrollbar:horizontal {
-    height: 12px;
-}
-
-.mobile-scrolled::-webkit-scrollbar-thumb {
-    background-color: #1aa0e8;
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-}
-
-.mobile-scrolled::-webkit-scrollbar-track {
-    border-radius: 10px;  
-    background-color: #ffffff; 
-}
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-::-webkit-scrollbar:vertical {
-    width: 12px;
-}
-
-::-webkit-scrollbar:horizontal {
-    height: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #1aa0e8;
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;  
-    background-color: #ffffff; 
-}
 @media (max-width: 1025px) {
-    .mobile-scrolled {
-        overflow-x: scroll;
-        margin-right: -20px;
-        padding-right: 20px;
-    }
-    .inside-page{
+
+    .inside-page {
         padding-bottom: 0;
     }
-}
 
-@media (max-width: 770px) {
-    .mobile-scrolled {
-        margin-right: -15px;
-        padding-right: 15px;
-    }
-}
-
-@media (max-width: 570px) {
-    .mobile-scrolled {
-        margin-bottom: 5px;
-    }
-}
-
-@media (max-width: 1024px) {
     .container {
         padding: 0 15px;
     }
