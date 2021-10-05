@@ -1,0 +1,44 @@
+.pagination {
+    margin-top: 30px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+            margin: 0 5px;
+            background: #1AA0E8;
+            border-radius: 5px;
+
+            a {
+                background: #fff;
+                border: 1px solid #DDDDDD;
+                color: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                border-radius: 5px;
+            }
+
+            a:hover,
+            a:active,
+            a:focus {
+                color: #fff;
+                background: #1AA0E8;
+            }
+        }
+    }
+    @media(max-width: 90px) {
+    }
+}

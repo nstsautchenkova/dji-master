@@ -66,7 +66,7 @@
                 <section class="catalog-page pt-0">
                     <div class="container">
                         <div class="section-title">
-                            <h1>Каталог моделей Tello</h1>
+                            <h1>Каталог моделей</h1>
                         </div>
                         @@include('./_template/modules/about/_about--horizontal_grid.html')
                     </div>
@@ -74,20 +74,41 @@
 
                 <section class="product pt-0">
                     <div class="container">
-                        <div class="product__cards product__cards--default">
-                            @@include('./_template/modules/product/_product-card.html')
+                        <div class="scroll-x">
+                            <div class="product__cards product__cards--scroll">
+                                @@include('./_template/modules/product/_product-card.html')
+                                @@include('./_template/modules/product/_product-card.html')
+                                @@include('./_template/modules/product/_product-card.html')
+                            </div>
                         </div>
+                    </div>
+                </section>
+
+                <section class="pt-0">
+                    <div class="container">
+                        @@include('./_template/modules/about/_about--horizontal_grid.html')
+                    </div>
+                </section>
+
+                <section class="product pt-0">
+                    <div class="container">
+                        <div class="scroll-x">
+                            <div class="product__cards product__cards--scroll">
+                                @@include('./_template/modules/product/_product-card.html')
+                                @@include('./_template/modules/product/_product-card.html')
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pt-0">
+                    <div class="container">
+                        @@include('./_template/modules/about/_about--horizontal_grid.html')
                     </div>
                 </section>
 
                 <section class="product product-sale pt-0">
                     <div class="container">
-                        <div class="section-title">
-                            <h3>
-                                Аксессуары
-                            </h3>
-                        </div>
-
                         <div class="scroll-x">
                             <div class="product__cards product__cards--scroll">
                                 @@include('./_template/modules/product/_product-card.html')

@@ -214,3 +214,33 @@ $('.clear-basket').click(function () {
 $('.product-card__add').click(function () {
     $(this).parents('.product-card').addClass('product-card--in-basket')
 });
+
+
+$(".catalog-filter__item").click(function () {
+    $(".catalog-filter__item").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    var selectedFilter = $(this).data("filter");
+
+    $(".product-filter").css('display', 'none');
+    $(selectedFilter).css('display', 'block');
+});
+
+
+
+
+// adaptive
+$(document).on("ready", function () {
+    if (window.matchMedia("(max-width: 1370px)").matches) {
+        // scroll
+        $(window).load(function () {
+            $.mCustomScrollbar.defaults.theme = "light-2";
+            $(".scroll-x").mCustomScrollbar({
+                axis: "x",
+                theme: "dark-3",
+                advanced: { autoExpandHorizontalScroll: true }
+            });
+        });
+
+    } else { }
+});

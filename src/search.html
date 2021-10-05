@@ -60,47 +60,55 @@
 
         <main class="page">
             @@include('./_template/modules/icons-slider/_icons-slider.html')
-            @@include('./_template/modules/bread-crumbs/_bread-crumbs.html')
 
             <div class="inside-page">
-                <section class="catalog-page pt-0">
+                <section class="search-page">
                     <div class="container">
                         <div class="section-title">
-                            <h1>Каталог моделей Tello</h1>
-                        </div>
-                        @@include('./_template/modules/about/_about--horizontal_grid.html')
-                    </div>
-                </section>
-
-                <section class="product pt-0">
-                    <div class="container">
-                        <div class="product__cards product__cards--default">
-                            @@include('./_template/modules/product/_product-card.html')
-                        </div>
-                    </div>
-                </section>
-
-                <section class="product product-sale pt-0">
-                    <div class="container">
-                        <div class="section-title">
-                            <h3>
-                                Аксессуары
-                            </h3>
+                            <h1>Результаты поиска</h1>
                         </div>
 
-                        <div class="scroll-x">
-                            <div class="product__cards product__cards--scroll">
+                        <form action="#" class="header__search search-form flex" autocomplete="off">
+                            <input class="search-form__input" name="search" placeholder="Поиск...">
+                            <button class="search-form__btn flex jcc aic" type="submit">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <div class="search-inquiry">
+                            Запрос “квадро”. Найдено 8 совпадений
+                        </div>
+
+                        <div class="search-filter">
+                            <ul class="search-filter__list">
+                                <li class="search-filter__item">
+                                    <button type="button" class="search-filter__btn filter-active">Везде</button>
+                                </li>
+                                <li class="search-filter__item">
+                                    <button type="button" class="search-filter__btn">В моделях</button>
+                                </li>
+                                <li class="search-filter__item">
+                                    <button type="button" class="search-filter__btn">В аксессуарах</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="product pt-0">
+                            <div class="product__cards product__cards--default">
                                 @@include('./_template/modules/product/_product-card.html')
                                 @@include('./_template/modules/product/_product-card.html')
                                 @@include('./_template/modules/product/_product-card.html')
-                                @@include('./_template/modules/product/_product-card--preorder.html')
-                                @@include('./_template/modules/product/_product-card--preorder.html')
+                                @@include('./_template/modules/product/_product-card.html')
+                                @@include('./_template/modules/product/_product-card.html')
+                                @@include('./_template/modules/product/_product-card.html')
                             </div>
+                            @@include('./_template/modules/pagination/_pagination.html')
                         </div>
                     </div>
                 </section>
             </div>
-
         </main>
 
         @@include('./_template/modules/footer/_footer.html')
