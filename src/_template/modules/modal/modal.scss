@@ -10,9 +10,10 @@
     -webkit-overflow-scrolling: touch;
     outline: 0;
 
-    &.in{
+    &.in {
         display: block;
     }
+
     &-open {
         overflow: hidden;
 
@@ -74,7 +75,7 @@
         bottom: 0;
         left: 0;
         z-index: 1040;
-        background-color: #000;
+        background-color: $main-color;
 
         &.fade {
             filter: alpha(opacity=0);
@@ -102,9 +103,9 @@
         background-clip: padding-box;
         outline: 0;
         width: 100%;
-        background-color: #fff;
+        background-color: $white;
         padding: 30px;
-        border: 1px solid #F7F8F9;
+        border: 1px solid $border-light;
         border-radius: 3px;
 
         button.close {
@@ -127,11 +128,11 @@
 
             &:hover {
                 path {
-                    fill: #000;
+                    fill: $main-color;
                 }
 
                 rect {
-                    fill: #000;
+                    fill: $main-color;
                 }
             }
         }
@@ -142,7 +143,7 @@
 
         .modal__tit {
             text-align: left;
-            color: #333333;
+            color: $main-color;
 
             h2 {
                 font-size: 20px;
@@ -206,5 +207,27 @@
                 }
             }
         }
+    }
+}
+
+.modal-send .modal__tit {
+    display: none;
+}
+
+.modal[data-name='modal-send__modal-feedback'] {
+    .modal-send__tit-feedback {
+        display: block;
+    }
+}
+
+.modal[data-name='modal-send__modal-preorder'] {
+    .modal-send__tit-preorder {
+        display: block;
+    }
+}
+
+.modal[data-name='modal-send__modal-quick-order'] {
+    .modal-send__tit-feedback {
+        display: block;
     }
 }

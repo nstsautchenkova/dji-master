@@ -1,0 +1,53 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 15px;
+
+    tr {
+        &:nth-child(odd) {
+            td {
+                background: #f8f8f8;
+            }
+        }
+    }
+
+    th,
+    td {
+        padding: 15px 15px 16px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    td {
+        font-size: 14px;
+        line-height: 28px;
+        color: #333;
+        vertical-align: text-top;
+
+        @media (max-width: 600px) {
+            font-size: 11px;
+            line-height: 16px;
+        }
+    }
+
+    th {
+        font-family: "Museo Sans Cyrl 500";
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+        padding-top: 0;
+        padding-left: 0;
+
+        @media (max-width: 600px) {
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+
+}

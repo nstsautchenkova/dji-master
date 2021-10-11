@@ -1,7 +1,7 @@
 .btn {
     text-align: center;
     transition: .3s all;
-    font-family: 'Museo Sans Cyrl 300';
+    font-family: $font-300;
     border-radius: 3px;
     color: #fff;
     font-size: 14px;
@@ -11,7 +11,7 @@
 
 .blue-btn {
     @extend .btn;
-    background: #1AA0E8;
+    background: $blue;
 
     &:hover {
         box-shadow: 0px 3px 15px rgba(26, 160, 232, 0.15);
@@ -19,13 +19,13 @@
 
     &:active,
     &:focus {
-        background: #1279B0;
+        background: $blue-dark;
     }
 }
 
 .red-btn {
     @extend .btn;
-    background: #E73C3C;
+    background: $red;
 
     &:hover {
         box-shadow: 0px 3px 15px rgba(229, 41, 41, 0.15);
@@ -33,13 +33,13 @@
 
     &:active,
     &:focus {
-        background: #C21818;
+        background: $red-dark;
     }
 }
 
 .green-btn {
     @extend .btn;
-    background: #4FAD03;
+    background: $green;
 
     &:hover {
         box-shadow: 0px 3px 15px rgba(79, 173, 3, 0.15);
@@ -47,15 +47,15 @@
 
     &:active,
     &:focus {
-        background: #3B8202;
+        background: $green-dark;
     }
 }
 
 .border-btn {
     @extend .btn;
     background: transparent;
-    border: 1px solid #1AA0E8;
-    color: #1AA0E8;
+    border: 1px solid $blue;
+    color: $blue;
 
     &:hover {
         box-shadow: 0px 3px 15px rgba(26, 160, 232, 0.15);
@@ -63,14 +63,16 @@
 
     &:active,
     &:focus {
-        color: #fff;
-        border: 1px solid #1AA0E8;
-        background: #1AA0E8;
+        border: 1px solid $blue-dark;
     }
 }
 
 
 .btn-disabled {
+    background: #A7A7A7 !important;
+    box-shadow: none !important;
+}
+button[disabled]{
     background: #A7A7A7 !important;
     box-shadow: none !important;
 }

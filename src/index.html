@@ -63,8 +63,38 @@
 
             @@include('./_template/modules/about/_about.html')
 
-            @@include('./_template/modules/product/_product.html')
-
+            <section class="product pt-0">
+                <div class="container">
+                    <div class="scroll-x">
+                        <div class="product__cards product__cards--scroll">
+                            @@include('./_template/modules/product/product-card/_product-card.html')
+                            @@include('./_template/modules/product/product-card/_product-card--out-of-production.html')
+                            @@include('./_template/modules/product/product-card/_product-card.html')
+                            @@include('./_template/modules/product/product-card/_product-card.html')
+                            @@include('./_template/modules/product/product-card/_product-card--preorder.html')
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="product product-sale pt-0">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>
+                            Акции и спецпредложения
+                        </h2>
+                    </div>
+                    <div class="scroll-x">
+                        <div class="product__cards product__cards--scroll">
+                            @@include('./_template/modules/product/product-card/_product-card.html')
+                            @@include('./_template/modules/product/product-card/_product-card--preorder.html')
+                            @@include('./_template/modules/product/product-card/_product-card.html')
+                            @@include('./_template/modules/product/product-card/_product-card.html')
+                            @@include('./_template/modules/product/product-card/_product-card--preorder.html')
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             @@include('./_template/modules/news/_news.html')
         </main>

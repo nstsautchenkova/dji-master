@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>DJI|MINSK</title>
+    <meta name="description" content="Autorized retail store">
+    <meta property="og:title" content="DJI|MINSK">
+    <meta property="og:description" content="Autorized retail store">
+    <meta property="og:image" content="img/meta-img.jpg">
+    <meta property="og:image:alt" content="DJI|MINSK">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- libs -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper" style="background-color: #F7F8F9;">
+        @@include('./_template/modules/header/_header.html')
+
+        @@include('./_template/modules/burger/burger-menu/_burger-menu.html')
+
+        <div class="drop-search">
+            <div class="drop-search__top flex jcsb aic">
+                <div class="drop-search__title flex aic">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                    Поиск
+                </div>
+                <button class="drop-search__close-btn" type="button">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <form action="#" class="search-form flex" autocomplete="off">
+                <input class="search-form__input" name="search" placeholder="Поиск...">
+                <button class="search-form__btn flex jcc aic" type="submit">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <main class="page">
+            @@include('./_template/modules/icons-slider/_icons-slider.html')
+            @@include('./_template/modules/bread-crumbs/_bread-crumbs.html')
+
+            <div class="inside-page">
+                <section class="guarantee-page pt-0">
+                    <div class="container">
+                        <div class="section-title">
+                            <h1>Гарантия и сервис</h1>
+                        </div>
+                        <div class="text-page">
+                            <h2>Гарантия</h2>
+                            <p>
+                                Также мы обеспечиваем наших покупателей всеми необходимыми аксессуарами и
+                                комплектующими.
+                                Мы полностью обеспечиваем наших клиентов всеми сопутствующими запчастями для поддержания
+                                и ремонта купленных у нас моделей. Наличие запчастей очень важно, так как поломка или
+                                выход из строя незначительной и дешёвой детали делает игрушку не работоспособной! А
+                                наличие запчастей является одним из главных и важных критериев при выборе
+                                радиоуправляемой модели!
+                            </p>
+                            <p>
+                                <b>На всю продукцию производителем установлена гарантия - 14 дней</b> с момента продажи,
+                                для выявления заводского дефекта. В момент покупки каждая модель проверяется в
+                                присутствии покупателя. В свою очередь покупатель должен произвести внешний осмотр
+                                товара, убедиться в отсутствии дефектов, а так же в соответствии заявленной
+                                комплектации.
+                            </p>
+                            <p>
+                                <b>Во время гарантийного срока гарантийные ремонты производится бесплатно.</b>
+                            </p>
+                            <h2>Сервис</h2>
+                            <p>
+                                Сдать устройство на обслуживание можно в фирменном магазине по адресу: Минск, пр-т.
+                                Победителей 9, 4 этаж
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        @@include('./_template/modules/footer/_footer.html')
+
+        @@include('./_template/modules/modal/_modal.html')
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

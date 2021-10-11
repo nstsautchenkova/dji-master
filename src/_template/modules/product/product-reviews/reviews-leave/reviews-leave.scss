@@ -1,0 +1,23 @@
+@import './rate/rate';
+
+.reviews-leave {
+    display: none;
+    padding-bottom: 30px;
+    width: 560px;
+
+    .form {
+        .tit {
+            font-size: 14px;
+            line-height: 17px;
+            color: $main-color;
+            font-family: $font-500;
+            margin-bottom: 15px;
+        }
+
+        .form-submit {
+            width: 172px;
+            height: 48px;
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+.form-container {
+    width: 509px;
+    margin: 30px auto 0;
+
+    @media (max-width: 600px) {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.form {
+    &__tit {
+        margin-bottom: 25px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 15px;
+            display: none;
+        }
+
+        h2 {
+            font-family: $font-500;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 20px;
+
+            @media (max-width: 1024px) {
+                font-size: 17px;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__btn {
+        padding: 16px 30px 15px;
+
+        @media (max-width: 1024px) {
+            width: 200px;
+        }
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    &__footer {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #F7F8F9;
+
+        @media (max-width: 600px) {
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+
+        a {
+            font-family: $font-500;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 17px;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .form-code {
+        font-size: 14px;
+        line-height: 17px;
+
+        .tit {
+            font-family: $font-500;
+            margin-bottom: 15px;
+        }
+
+        .code {
+            width: auto;
+            background: #333333;
+            border-radius: 3px;
+            padding: 24px 70px;
+            color: #fff;
+            display: inline-block;
+            max-width: 230px;
+            margin-right: 49px;
+
+            @media (max-width: 600px) {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 0 15px;
+                text-align: center;
+                padding: 15px 0;
+            }
+        }
+
+        .flex {
+            @media (max-width: 600px) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .valid-star {
+        color: $red;
+    }
+
+    .form-group__row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @media (max-width: 600px) {
+            .form-submit{
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .forgot-password {
+        a {
+            font-size: 14px;
+            line-height: 17px;
+            color: $second-color;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    .password-rule {
+        font-size: 12px;
+        line-height: 14px;
+        color: $second-color;
+        margin-top: 2px;
+    }
+}

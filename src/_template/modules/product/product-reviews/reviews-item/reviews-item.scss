@@ -1,0 +1,39 @@
+.reviews-item {
+    background: $white;
+    border: 1px solid $border-light;
+    border-top: 0;
+    padding: 20px;
+
+    &:first-child{
+        border-top: 1px solid $border-light;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__name {
+        font-family: $font-500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $main-color;
+        margin-right: 20px;
+    }
+
+    &__date {
+        font-size: 12px;
+        line-height: 12px;
+        color: $second-color;
+    }
+
+    &__content {
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            color: $main-color;
+        }
+    }
+}

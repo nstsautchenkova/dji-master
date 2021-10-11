@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>DJI|MINSK</title>
+    <meta name="description" content="Autorized retail store">
+    <meta property="og:title" content="DJI|MINSK">
+    <meta property="og:description" content="Autorized retail store">
+    <meta property="og:image" content="img/meta-img.jpg">
+    <meta property="og:image:alt" content="DJI|MINSK">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- libs -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper" style="background-color: #F7F8F9;">
+        @@include('./_template/modules/header/_header.html')
+
+        @@include('./_template/modules/burger/burger-menu/_burger-menu.html')
+
+        <div class="drop-search">
+            <div class="drop-search__top flex jcsb aic">
+                <div class="drop-search__title flex aic">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                    Поиск
+                </div>
+                <button class="drop-search__close-btn" type="button">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <form action="#" class="search-form flex" autocomplete="off">
+                <input class="search-form__input" name="search" placeholder="Поиск...">
+                <button class="search-form__btn flex jcc aic" type="submit">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <main class="page">
+            @@include('./_template/modules/icons-slider/_icons-slider.html')
+            @@include('./_template/modules/bread-crumbs/_bread-crumbs.html')
+
+            <div class="inside-page">
+                <section class="contacts-page pt-0">
+                    <div class="container">
+                        <div class="section-title">
+                            <h1>Конаткты</h1>
+                        </div>
+                    </div>
+
+                    @@include('./_template/modules/contacts/_contacts-info.html')
+
+                    <div class="container">
+                        @@include('./_template/modules/map/_map.html')
+
+
+                        <div class="contacts-page__requisites">
+                            <div class="section-title">
+                                <h3>Реквизиты</h3>
+                            </div>
+                            <div class="grid col-2 col-lg-1">
+                                <div>
+                                    <p>
+                                        Общество с ограниченной ответственностью "Хобби-Парк"<br />
+                                        Юр. и почтовый адрес : индекс 220114 г. Минск, ул. Кирилла Туровского д.12
+                                        пом.153<br />
+                                        Зарегистрирован: 23 июня 2010 г. Минским горисполкомом.<br />
+                                        УНП: 191305478 ОКПО: 379290215000
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        Расчетный счет: BY13 PJCB 3012 0183 8310 0000 0933<br />
+                                        Наименование банка: ОАО "Приорбанк", ЦБУ 115, МФО: 153001749, Код Банка:
+                                        PJCBBY2X<br />
+                                        Адрес банка: г. Минск 220002 ул. В. Хоружей, 31-А<br />
+                                        Директор: Пылаев Виктор Михайлович на основании Устава.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        @@include('./_template/modules/footer/_footer.html')
+
+        @@include('./_template/modules/modal/_modal.html')
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>&amp;scroll=false"
+        type="text/javascript"></script>
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [53.908570, 27.548608],
+                zoom: 15,
+                controls: ['smallMapDefaultSet']
+            }, {
+                suppressMapOpenBlock: true
+            })
+
+            myMap.geoObjects
+                .add(new ymaps.Placemark([53.908570, 27.548608], {
+                    balloonContent: '<div class="map-object"><div class="name-office"><h2>г. Минск, пр-т. Победителей 9, 4 эт.</h2></div></div>'
+                }))
+
+                .add(new ymaps.Placemark([53.908554, 27.546021], {
+                    balloonContent: '<div class="map-object"><div class="name-office"><h2>г. Минск, пр-т. Победителей 9, 4 эт.</h2></div></div>'
+                }));
+        }
+    </script>
+
+</body>
+
+</html>

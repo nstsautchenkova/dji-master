@@ -33,10 +33,9 @@
 
     @media(max-width: 1024px) {
         .product-card__economy {
-            font-weight: 250;
+            font-family: $font-300;
             font-size: 12px;
             line-height: 16px;
-            font-family: "Museo Sans Cyrl 300";
         }
     }
 
@@ -50,13 +49,13 @@
     .tit {
         font-size: 14px;
         line-height: 17px;
-        color: #464855;
+        color: $main-color;
     }
 
     .clear-basket {
         font-size: 14px;
         line-height: 17px;
-        color: #CACACA;
+        color: $second-color;
         display: flex;
         align-items: center;
 
@@ -67,11 +66,11 @@
         &:hover,
         &:active,
         &:focus {
-            color: #333;
+            color: $main-color;
 
             svg {
                 path {
-                    fill: #333;
+                    fill: $main-color;
                 }
             }
         }
@@ -80,7 +79,7 @@
 
 .basket-page__list {
     margin-top: 8px;
-    border-top: 2px solid #1AA0E8;
+    border-top: 2px solid $blue;
     width: 100%;
 }
 
@@ -175,7 +174,7 @@
     &__vendor-code {
         font-size: 12px;
         line-height: 14px;
-        color: #505359;
+        color: $main-color;
         margin-bottom: 15px;
 
         @media(max-width: 650px) {
@@ -296,7 +295,7 @@
         &:focus {
             svg {
                 path {
-                    fill: #333;
+                    fill: $main-color;
                 }
             }
         }
@@ -323,7 +322,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #F7F8F9;
+    border: 1px solid $border-light;
     padding: 42px 25px 70px;
     margin-top: 30px;
 
@@ -370,7 +369,7 @@
 
         .form-control {
             background: #FBFBFB;
-            border: 1px solid #EAEAEA;
+            border: 1px solid $border-light;
             height: 40px;
             border-radius: 0;
 
@@ -382,7 +381,7 @@
         .coupon__btn {
             width: 40px;
             height: 40px;
-            background: #1AA0E8;
+            background: $blue;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -416,14 +415,14 @@
             .tit {
                 font-size: 18px;
                 line-height: 22px;
-                color: #464855;
+                color: $main-color;
                 margin-bottom: 6px;
             }
 
             .value {
                 font-size: 14px;
                 line-height: 18px;
-                color: rgba(70, 72, 85, 0.6);
+                color: $second-color;
             }
 
             @media(max-width: 650px) {
@@ -526,8 +525,9 @@
     .tit {
         font-size: 34px;
         line-height: 41px;
-        color: #C4C4C4;
-        font-weight: 500;
+        color: $second-color;
+        font-family: $font-500;
+        font-weight: normal;
         margin-bottom: 50px;
     }
 
@@ -553,8 +553,9 @@
         .tit {
             font-size: 22px;
             line-height: 22px;
-            color: #c4c4c4;
-            font-weight: 500;
+            color: $second-color;
+            font-family: $font-500;
+            font-weight: normal;
             margin-bottom: 25px;
         }
     }

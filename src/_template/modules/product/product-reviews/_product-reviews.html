@@ -1,0 +1,26 @@
+<div class="product-reviews">
+    <div class="product-reviews__header">
+        <div class="tit">Отзывы <span class="reviews-number">3</span></div>
+        <div class="info">
+            <div class="rating">
+                <ul class="star-list">
+                    <li class="star"><img src="img/icons/star.svg" alt="" /></li>
+                    <li class="star"><img src="img/icons/star.svg" alt="" /></li>
+                    <li class="star"><img src="img/icons/star.svg" alt="" /></li>
+                    <li class="star"><img src="img/icons/star.svg" alt="" /></li>
+                    <li class="star"><img src="img/icons/star.svg" alt="" /></li>
+                </ul>
+                <div class="value">(112)</div>
+            </div>
+            <div class="blue-btn btn--reviews-leave">Оставить отзыв</div>
+        </div>
+    </div>
+
+    @@include('./reviews-leave/_reviews-leave.html')
+
+    <div class="product-reviews__list">
+        @@include('./reviews-item/_reviews-item.html')
+        @@include('./reviews-item/_reviews-item.html')
+        @@include('./reviews-item/_reviews-item.html')
+    </div>
+</div>

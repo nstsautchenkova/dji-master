@@ -1,11 +1,11 @@
 @mixin placeholder {
     font: {
-        family: 'Museo Sans Cyrl 300';
+        family: $font-300;
         size: 14px;
         weight: normal;
     }
 
-    color: #6B6F81;
+    color: $second-color;
     opacity: 1;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
@@ -35,33 +35,45 @@ form {
 
         label {
             display: block;
-            font-weight: 300;
+            font-family: $font-300;
+            font-weight: normal;
             font-size: 14px;
             line-height: 17px;
             margin-bottom: 15px;
+
+            @media (max-width: 600px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        textarea.form-control {
+            width: 100%;
+            max-width: 100%;
+            height: 144px;
+            padding-top: 15px;
         }
 
         .form-control {
             font: {
-                family: 'Museo Sans Cyrl 300';
-                size: 12px;
+                family: $font-300;
+                size: 14px;
                 weight: normal;
             }
 
-            color: #333;
+            color: $main-color;
             line-height: 17px;
             text-overflow: ellipsis;
 
             width: 100%;
-            background: transparent;
-            border:1px solid #F7F8F9;
+            background: #F7F8F9;
+            border: 1px solid #DDDDDD;
             border-radius: 3px;
             padding: 11px 15px 10px;
-
+            height: 48px;
 
             &:hover {
-                border: 1px solid #1AA0E8;
-                color: #333;
+                border: 1px solid $blue;
+                color: $main-color;
             }
 
             @media (max-width: 350px) {
@@ -72,8 +84,47 @@ form {
 
                     line-height: 14px;
                     padding: 7px 10px;
+                    height: 40px;
                 }
             }
+
+            &:focus {
+                background: #fff;
+            }
+        }
+
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group-val {
+            background: #F7F8F9;
+
+            .form-control {
+                background: transparent;
+                position: relative;
+                z-index: 2;
+
+                &:focus {
+                    background: #fff;
+                }
+            }
+
+            &.input-focus {
+                .label-validation {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .label-validation {
+            position: absolute;
+            position: absolute;
+            margin: 0;
+            left: 15px;
+            top: 16px;
+            color: $second-color;
         }
 
         .validation {
@@ -83,7 +134,7 @@ form {
             line-height: 11px;
             color: #E73C3C;
             right: 15px;
-            top: 15px;
+            top: 20px;
 
             @media (max-width: 350px) {
                 & {
@@ -103,7 +154,59 @@ form {
             }
         }
     }
+
+    .captcha {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        &__tit {
+            width: 230px;
+            height: 48px;
+            border: 1px solid #DDDDDD;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $main-color;
+        }
+
+        .img {
+            margin: 0 15px;
+        }
+
+        .input-group {
+            width: 279px;
+        }
+
+        &__value {
+            max-width: 279px;
+        }
+
+        @media (max-width:600px) {
+            .validation {
+                display: none !important;
+            }
+        }
+    }
+
+    .form-code {
+        .captcha {
+            margin-bottom: 0 !important;
+
+            .input-group {
+                width: 279px;
+            }
+        }
+    }
 }
+
+
 
 input:focus,
 input:active,
@@ -150,23 +253,23 @@ form input.form-control {
     }
 
     &:hover::-webkit-input-placeholder {
-        color: #333;
+        color: $main-color;
     }
 
     &:hover::-webkit-input-placeholder {
-        color: #333;
+        color: $main-color;
     }
 
     &:hover::-moz-placeholder {
-        color: #333;
+        color: $main-color;
     }
 
     &:hover:-moz-placeholder {
-        color: #333;
+        color: $main-color;
     }
 
     &:hover:-ms-input-placeholder {
-        color: #333;
+        color: $main-color;
     }
 }
 
@@ -206,23 +309,23 @@ form textarea.form-control {
     }
 
     &:hover::-webkit-input-placeholder {
-        color: #333;
+        color: $main-color;
     }
 
     &:hover::-webkit-input-placeholder {
-        color: #333;
+        color: $main-color;
     }
 
     &:hover::-moz-placeholder {
-        color: #333;
+        color: $main-color;
     }
 
     &:hover:-moz-placeholder {
-        color: #333;
+        color: $main-color;
     }
 
     &:hover:-ms-input-placeholder {
-        color: #333;
+        color: $main-color;
     }
 }
 

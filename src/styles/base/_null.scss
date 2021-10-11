@@ -18,7 +18,8 @@ body {
     min-width: 320px;
     font-family: 'Museo Sans Cyrl 300';
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
+    color: $main-color;
 
     &._lock {
         overflow-y: hidden;
@@ -43,6 +44,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: $font-500;
     font-size: inherit;
     font-weight: normal;
 }
@@ -50,6 +52,7 @@ h6 {
 ul,
 ol,
 li {
+    font-family: $font-300;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,6 +61,7 @@ li {
 dl,
 dd,
 dt {
+    font-family: $font-300;
     margin: 0;
     padding: 0;
 }
@@ -105,55 +109,4 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-section {
-    padding: 30px 0;
-}
-
-.width-100 {
-    width: 100% !important;
-}
-
-.inside-page {
-    background: #fff;
-    padding-bottom: 20px;
-}
-.mCSB_horizontal.mCSB_inside>.mCSB_container {
-    margin-bottom: 20px;
-}
-.mCSB_scrollTools.mCSB_scrollTools_horizontal{
-    height: 5px;
-}
-.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
-    background: transparent;
-    margin: 0;
-    height: 5px;
-}
-.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    background: #1AA0E8 !important;
-    border-radius: 5px;
-    height: 5px;
-    margin: 0;
-}
-
-@media (max-width: 1025px) {
-
-    .inside-page {
-        padding-bottom: 0;
-    }
-
-    .container {
-        padding: 0 15px;
-    }
-
-    section {
-        padding: 20px 0;
-    }
-}
-
-@media (max-width: 770px) {
-    .page {
-        padding-top: 88px;
-    }
 }

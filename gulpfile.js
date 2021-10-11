@@ -44,9 +44,9 @@ let { src, dest } = require('gulp'),
     imagemin = require('gulp-imagemin'),
     svgSprite = require('gulp-svg-sprite'),
     webp = require('gulp-webp'),
-    webphtml = require('gulp-webp-html'),
-    htmlmin = require('gulp-htmlmin');
-
+    htmlmin = require('gulp-htmlmin'),
+    webphtml = require('gulp-webp-html');
+    
 function browserSync() {
     browsersync.init({
         server: {
@@ -60,7 +60,7 @@ function browserSync() {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlmin({ collapseWhitespace: false }))
         .pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream());

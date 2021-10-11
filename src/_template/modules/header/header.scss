@@ -1,9 +1,6 @@
 .header {
-
-    // .header__top
-
     &__top {
-        background-color: #fff;
+        background-color: $white;
         padding: 10px 0;
 
         @media(max-width: 900px) {
@@ -11,22 +8,19 @@
         }
     }
 
-    // .header__main
-
     &__main {
         padding: 16px 0;
-        background-color: #F7F8F9;
+        background-color: $border-light;
 
         @media(max-width: 900px) {
             height: 88px;
-            background-color: #2C2C2C;
+            background-color: $main-color;
             padding: 23px 0;
             display: flex;
             align-items: center;
         }
     }
 
-    // .header__logo
 
     &__logo {
         @media(max-width: 900px) {
@@ -42,12 +36,12 @@
             }
 
             &-minsk {
-                color: #fff;
+                color: $white;
                 font-size: 16px;
             }
 
             & path {
-                fill: #fff;
+                fill: $white;
             }
         }
 
@@ -60,8 +54,6 @@
             margin-left: 5px;
         }
     }
-
-    // .header__logo-img
 
     &__logo-img {
         @media(max-width: 900px) {
@@ -77,20 +69,18 @@
         }
     }
 
-    // .header__logo-descr
-
     &__logo-descr {
         font-family: 'Museo Sans Cyrl 500';
         font-size: 12px;
         line-height: 20px;
         text-transform: uppercase;
-        color: #2C2C2C;
+        color: $main-color;
         margin-left: 7px;
         position: relative;
         top: -1x;
 
         @media(max-width: 992px) {
-            color: #fff;
+            color: $white;
             font-size: 12px;
             line-height: 20px;
             width: 100%;
@@ -120,7 +110,7 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 100;
-        background-color: #fff;
+        background-color: $white;
         box-shadow: 0px 5px 25px rgba(51, 51, 51, 0.25);
         border-radius: 3px;
         padding: 0 15px;
@@ -143,13 +133,11 @@
         }
     }
 
-    // .header__enter-btn
-
     &__enter-btn,
     &__register {
         font-family: 'Museo Sans Cyrl 500';
         font-size: 14px;
-        color: #2C2C2C;
+        color: $main-color;
 
         @media(max-width: 900px) {
             display: none;
@@ -167,8 +155,6 @@
         }
     }
 
-    // .header__register
-
     &__register {
         position: relative;
         padding-left: 20px;
@@ -183,11 +169,9 @@
             transform: translateY(-50%);
             width: 1px;
             height: 15px;
-            background-color: #D9D9D9;
+            background-color: $second-color;
         }
     }
-
-    // .header__basket
 
     &__basket {
         position: relative;
@@ -212,14 +196,13 @@
             height: 17px;
             background-color: $blue;
             border-radius: 50%;
-            font-family: 'Montserrat',
-                sans-serif;
-            font-weight: bold;
+            font-family: $font-700;
+            font-weight: normal;
             font-size: 10px;
             line-height: 16px;
             text-align: center;
             padding-bottom: 1px;
-            color: #FFFFFF;
+            color: $white;
             position: absolute;
             top: -6px;
             right: -7px;
@@ -227,13 +210,13 @@
 
         &--empty {
             span {
-                background-color: #ddd;
+                background-color: $second-color;
             }
         }
     }
 
     &__menu {
-        background-color: #2C2C2C;
+        background-color: $main-color;
         padding: 14px 0;
 
         @media(max-width: 900px) {
@@ -262,7 +245,7 @@
         top: 0;
         left: 0;
         z-index: 100;
-        background-color: #2c2c2c;
+        background-color: $main-color;
     }
 }
 
@@ -270,16 +253,12 @@
     font-size: 14px;
     line-height: 20px;
 
-    // .top-header__address
-
     &__address {
         svg {
             width: 8px;
             margin-right: 6px;
         }
     }
-
-    // .top-header__time
 
     &__time {
         margin-right: auto;
@@ -294,15 +273,13 @@
     &__address,
     &__time {
         font-family: 'Museo Sans Cyrl 500';
-        color: #9B9B9B;
+        color: $second-color;
 
         svg {
             height: 12px;
             flex-shrink: 0;
         }
     }
-
-    // .top-header__inst
 
     &__inst {
         width: 14px;
@@ -320,14 +297,12 @@
         }
     }
 
-    // .top-header__phone
-
     &__phone {
         position: relative;
         padding-left: 20px;
         padding-right: 25px;
         font-family: 'Museo Sans Cyrl 500';
-        color: #2C2C2C;
+        color: $main-color;
 
         &--active::after {
             content: '';
@@ -355,14 +330,14 @@
             left: 0;
             width: 1px;
             height: 15px;
-            background-color: #d9d9d9;
+            background-color: $second-color;
         }
     }
 
     &__phone-drop {
         width: 20px;
         height: 20px;
-        background-color: #F4F5F7;
+        background-color: $border-light;
         border-radius: 3px;
         transition: .3s transform;
         margin-left: 5px;
@@ -382,8 +357,6 @@
         }
     }
 
-    // .top-header__call-btn
-
     &__call-btn {
         padding: 7px 30px;
         margin-left: 28px;
@@ -391,11 +364,10 @@
 }
 
 .header-menu {
-    // .header-menu__link
 
     &__link {
         font-family: 'Museo Sans Cyrl 300';
-        color: #fff;
+        color: $white;
         font-size: 16px;
         line-height: 24px;
         transition: .3s color;

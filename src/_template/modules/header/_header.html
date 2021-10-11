@@ -61,7 +61,7 @@
                     </li>
                     <li class="contacts__item flex aic">
                         <span>@</span>
-                        mail@dji-minsk.by
+                        <a href="mailto:mail@dji-minsk.by">mail@dji-minsk.by</a>
                     </li>
                 </ul>
             </div>
@@ -71,7 +71,7 @@
     <div class="header__main">
         <div class="container flex jcsb aic">
             @@include('../burger/burger-btn/_burger-btn.html')
-            <a class="header__logo flex aic" href="#">
+            <a class="header__logo flex aic" href="index.html">
                 <svg height="40" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                         <path
@@ -98,19 +98,22 @@
                     <use xlink:href="img/sprite.svg#blue-call"></use>
                 </svg>
             </a>
-            <button class="header__search-btn" type="button">
+            <a href="search.html" class="header__search-btn" type="button">
                 <svg>
                     <use xlink:href="img/sprite.svg#search"></use>
                 </svg>
-            </button>
+            </a>
+
             @@include('../search/_search.html')
-            <button class="header__enter-btn flex aic" type="button">
+
+            <a href="login.html" class="header__enter-btn flex aic">
                 <svg>
                     <use xlink:href="img/sprite.svg#user"></use>
                 </svg>
                 Вход
-            </button>
-            <button class="header__register" type="button">Регистрация</button>
+            </a>
+            <a href="register.html" class="header__register" type="button">Регистрация</a>
+
             <a href="basket-null.html" class="header__basket header__basket--empty">
                 <svg>
                     <use xlink:href="img/sprite.svg#cart"></use>

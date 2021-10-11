@@ -1,22 +1,24 @@
 .section-title {
-    color: #000;
+    color: $main-color;
     margin-bottom: 20px;
 
     h1 {
-        font-weight: 600;
+        font-family: $font-700;
+        font-weight: normal;
         font-size: 30px;
         line-height: 36px;
-        color: #333;
     }
 
     h2 {
-        font-weight: 300;
+        font-weight: $font-300;
+        font-weight: normal;
         font-size: 30px;
         line-height: 36px;
     }
 
     h3 {
-        font-weight: 600;
+        font-family: $font-700;
+        font-weight: normal;
         font-size: 16px;
         line-height: 24px;
     }
@@ -50,6 +52,10 @@
         p {
             font-size: 12px;
             line-height: 18px;
+        }
+        h3 {
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 }

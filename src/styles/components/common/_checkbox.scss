@@ -1,0 +1,66 @@
+.form-group {
+    .checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-size: 14px;
+    line-height: 17px;
+
+    &-input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked~.checkbox-mark {
+            background-color: $blue;
+
+            &:after {
+                display: block;
+            }
+        }
+    }
+
+    &-mark {
+        width: 25px;
+        height: 25px;
+        background: #F7F8F9;
+        border: 1px solid $border-card;
+        border-radius: 3px;
+        margin-right: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -1px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            width: 5px;
+            height: 8px;
+            border: solid #fff;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}

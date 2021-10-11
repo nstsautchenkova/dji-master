@@ -1,0 +1,83 @@
+.product-recommended {
+    width: 330px;
+
+    @media(max-width: 1200px) {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    @media(max-width: 600px) {
+        margin-top: 20px;
+    }
+
+    &__list {
+        @media(max-width: 1200px) {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+
+        @media(max-width: 900px) {
+            grid-template-columns: repeat(2, auto);
+        }
+
+        @media(max-width: 600px) {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+
+    &__card {
+        border: 1px solid $border-light;
+        transition: .3s box-shadow, .3s -webkit-box-shadow;
+        padding: 33px 20px 33px 10px;
+        display: flex;
+
+        &:hover {
+            box-shadow: 0 4px 20px rgb(96 96 96 / 25%);
+            z-index: 2;
+        }
+
+        @media(max-width: 600px) {
+            padding: 15px;
+        }
+    }
+
+    &__img {
+        border: 1px solid $border-light;
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    &__description {
+        width: calc(100% - 100px);
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 20px;
+        color: $main-color;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__new-price {
+        font-size: 14px;
+        line-height: 21px;
+        font-family: $font-700;
+    }
+
+    &__old-price {
+        font-family: $font-700;
+        font-size: 12px;
+        line-height: 21px;
+        color: $second-color;
+    }
+}

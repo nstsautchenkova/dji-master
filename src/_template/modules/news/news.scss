@@ -1,18 +1,15 @@
 .news {
-    background: #fff;
+    background: $white;
+
     @media(max-width: 575px) {
         padding-bottom: 20px;
     }
 
-    // .news__title
     &__title {
         @media(max-width: 768px) {
             font-size: 16px;
         }
     }
-
-
-    // .news__cards
 
     &__cards {
         display: grid;
@@ -46,6 +43,7 @@
         padding: 10px 40px;
         font-size: 14px;
         line-height: 24px;
+
         @media(max-width: 1024px) {
             margin-top: 10px;
         }
@@ -53,7 +51,14 @@
 }
 
 .news-card {
-    // .news-card__img
+    display: none;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+        display: block;
+    }
 
     &__img {
         display: block;
@@ -87,24 +92,19 @@
         }
     }
 
-    // .news-card__date
-
     &__date {
-        font-weight: 300;
         font-size: 12px;
         line-height: 14px;
-        color: #6B6F81;
+        color: $second-color;
         margin-bottom: 15px;
         display: block;
     }
 
-    // .news-card__title
 
     &__title {
         font-size: 18px;
         line-height: 26px;
-        font-weight: 300;
-        color: #333;
+        color: $main-color;
         transition: .3s all;
 
         a {
@@ -118,4 +118,25 @@
             }
         }
     }
+}
+
+.news__cards--default {
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, auto) !important;
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(1, auto) !important;
+    }
+    .news-card{
+        display: block;
+    }
+}
+
+.news-last {
+    background: $border-light;
 }

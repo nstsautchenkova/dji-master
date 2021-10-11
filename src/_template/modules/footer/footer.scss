@@ -1,13 +1,9 @@
 .footer {
-
-    color: #fff;
-    // .footer__body
+    color: $white;
 
     &__body {
-        background-color: #373737;
+        background-color: $main-color;
     }
-
-    // .footer__top
 
     &__top {
         border-bottom: 1px solid rgba(196, 196, 196, 0.2);
@@ -27,10 +23,8 @@
         color: $blue;
     }
 
-    // .footer__social
-
     &__social {
-        font-weight: 300;
+        font-family: $font-300;
         font-size: 12px;
         line-height: 20px;
 
@@ -39,13 +33,9 @@
         }
     }
 
-    // .footer__inst
-
     &__inst {
         margin-left: 10px;
     }
-
-    // .footer__main
 
     &__main {
         padding: 40px 0;
@@ -62,7 +52,6 @@
         }
     }
 
-    // .footer__col
 
     &__col {
         padding: 0 15px;
@@ -150,10 +139,8 @@
         }
     }
 
-    // .footer__title
-
     &__title {
-        font-family: 'Museo Sans Cyrl 300';
+        font-family: $font-300;
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 25px;
@@ -164,8 +151,6 @@
         }
     }
 
-    // .footer__menu
-
     &__menu {
         margin: 0 -30px;
 
@@ -173,8 +158,6 @@
             margin: 0 -15px;
         }
     }
-
-    // .footer__menu-col
 
     &__menu-col {
         padding: 0 30px;
@@ -194,8 +177,6 @@
         }
     }
 
-    // .footer__menu-item
-
     &__menu-item {
         display: block;
         font-size: 16px;
@@ -207,10 +188,8 @@
         }
     }
 
-    // .footer__bottom
-
     &__bottom {
-        background-color: #333333;
+        background-color: $main-color;
         font-size: 12px;
         line-height: 20px;
         padding: 15px 0;
@@ -236,7 +215,6 @@
         }
     }
 
-    // .footer__copyright
 
     &__copyright {
         span {
@@ -245,8 +223,6 @@
             }
         }
     }
-
-    // .footer__politics
 
     &__politics {
         margin-right: 140px;
@@ -273,10 +249,12 @@
         }
     }
 }
-.footer__menu-item.footer__social{
+
+.footer__menu-item.footer__social {
     display: flex;
     align-items: center;
-    .footer__inst{
+
+    .footer__inst {
         margin-left: 5px;
         display: block;
         position: relative;

@@ -1,5 +1,4 @@
 @import './vars';
-//@import './mixins';
 @import './fonts';
 @import './null';
 @import './grid';
@@ -20,6 +19,265 @@
 .blue {
     color: $blue;
 }
-.pt-0{
+
+.pt-0 {
     padding-top: 0 !important;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.inside-page {
+    background: #fff;
+    padding-bottom: 20px;
+}
+
+.mCSB_horizontal.mCSB_inside>.mCSB_container {
+    margin-bottom: 20px;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    height: 5px;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+    background: transparent;
+    margin: 0;
+    height: 5px;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: $blue !important;
+    border-radius: 5px;
+    height: 5px;
+    margin: 0;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+
+    .star-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .star {
+        margin-right: 6px;
+    }
+
+    .value {
+        font-size: 14px;
+        line-height: 24px;
+        color: $main-color;
+        margin-left: 4px;
+    }
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+
+    @media (max-width: 600px) {
+        margin-bottom: 15px;
+    }
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.img {
+    line-height: 0;
+
+    .img {
+        max-width: 100%;
+    }
+}
+
+.video {
+    line-height: 0;
+    height: 270px;
+
+    @media (max-width: 1200px) {
+        height: 187px;
+    }
+
+    @media (max-width: 900px) {
+        height: 150px;
+    }
+
+    @media (max-width: 600px) {
+        height: 175px;
+    }
+
+    iframe {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+
+.text-page {
+    &__date {
+        font-size: 12px;
+        line-height: 24px;
+        color: $second-color;
+        margin-bottom: 20px;
+
+        @media (max-width: 600px) {
+            margin: 10px 0;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        color: $main-color;
+        margin: 20px 0;
+
+        @media (max-width: 600px) {
+            font-size: 12px;
+            line-height: 22px;
+            margin: 10px 0;
+        }
+    }
+
+    b {
+        font-family: $font-500;
+        font-weight: normal;
+    }
+
+    .grid {
+        grid-gap: 30px;
+
+        @media (max-width: 600px) {
+            margin: 10px 0;
+            grid-gap:0;
+        }
+    }
+
+    .img {
+        margin: 20px 0;
+
+        @media (max-width: 600px) {
+            margin: 10px 0;
+        }
+    }
+
+    .video {
+        margin: 20px 0;
+
+        @media (max-width: 600px) {
+            margin: 10px 0;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 26px;
+        font-family: $font-500;
+        margin: 20px 0;
+
+        @media (max-width: 600px) {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 10px 0;
+        }
+    }
+
+    .margin-30 {
+        margin: 30px 0;
+
+        @media (max-width: 600px) {
+            margin: 10px 0;
+        }
+    }
+
+    ul {
+        li {
+            color: $main-color;
+            font-size: 16px;
+            line-height: 30px;
+            padding-left: 25px;
+            position: relative;
+
+            &.tit {
+                font-family: $font-500;
+                padding-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: $blue;
+                left: 0;
+                top: 8px;
+                position: absolute;
+
+                @media (max-width: 600px) {
+                    top: 6px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.installment-card {
+    max-width: 764px;
+
+    &.grid {
+        grid-gap: 30px 15px;
+    }
+
+    .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1025px) {
+
+    .inside-page {
+        padding-bottom: 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    .scroll-x {
+        margin-right: -15px;
+    }
+}
+
+@media (max-width: 770px) {
+    .page {
+        padding-top: 88px;
+    }
 }

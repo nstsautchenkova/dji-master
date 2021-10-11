@@ -4,29 +4,24 @@
 @import 'modules/icons-slider/icons-slider';
 @import 'modules/burger/burger';
 @import 'modules/footer/footer';
-//@import 'modules/popups/popups';
+@import 'modules/stock/stock';
 
-// ============= HOME-PAGE ============== //
 @import 'modules/top-banner/top-banner';
 @import 'modules/about/about';
-@import 'modules/sale/sale';
 @import 'modules/product/product';
 @import 'modules/news/news';
 
-// ============= modal ============== //
 @import 'modules/modal/modal';
 
-// ============= bread crumbs ============== //
 @import 'modules/bread-crumbs/bread-crumbs';
 
-// ============= pagination ============== //
 @import 'modules/pagination/pagination';
 
-// ============= BASKET-PAGE ============== //
 @import 'modules/basket/basket';
-
-// ============= catalog ============== //
 @import 'modules/catalog/catalog';
+@import 'modules/news/news';
 
-// ============= PRODUCT-CARD-PAGE ============== //
-//@import 'modules/product-card/product-card';
+@import 'modules/form/form';
+
+@import 'modules/map/map';
+@import 'modules/contacts/contacts';
