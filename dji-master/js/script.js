@@ -650,6 +650,12 @@ $(".search-filter__btn").click(function () {
     $(this).addClass('filter-active');
 });
 
+//header__basket 
+var basketValue = $('.header__basket span').text();
+if (basketValue == 0){
+    $('.header__basket').addClass('header__basket--empty');
+}
+
 
 $(document).ready(function () {
     var productSliderThumbs = new Swiper(".product-slider__thumbs", {

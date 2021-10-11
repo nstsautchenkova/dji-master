@@ -43,9 +43,7 @@ let { src, dest } = require('gulp'),
     uglify = require('gulp-uglify-es').default,
     imagemin = require('gulp-imagemin'),
     svgSprite = require('gulp-svg-sprite'),
-    webp = require('gulp-webp'),
-    htmlmin = require('gulp-htmlmin'),
-    webphtml = require('gulp-webp-html');
+    htmlmin = require('gulp-htmlmin');
     
 function browserSync() {
     browsersync.init({
@@ -61,7 +59,6 @@ function html() {
     return src(path.src.html)
         .pipe(fileinclude())
         .pipe(htmlmin({ collapseWhitespace: false }))
-        .pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream());
 }
@@ -109,13 +106,6 @@ function js() {
 
 function images() {
     return src(path.src.img)
-        .pipe(
-            webp({
-                quality: 70
-            })
-        )
-        .pipe(dest(path.build.img))
-        .pipe(src(path.src.img))
         .pipe(
             imagemin({
                 progressive: true,
