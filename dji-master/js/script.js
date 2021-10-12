@@ -724,7 +724,7 @@ $(window).load(function () {
 
 // adaptive
 $(document).on("ready", function () {
-    if (window.matchMedia("(max-width: 600px)").matches) {
+    if (window.matchMedia("(max-width: 740px)").matches) {
         //catalog-filter
         $(".catalog-filter").click(function () {
             $(this).toggleClass('active');
