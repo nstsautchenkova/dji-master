@@ -4396,6 +4396,7 @@ table {
   height: 126px;
   padding: 0;
   margin-left: -1px;
+  border-right: 3px solid #fff;
 }
 
 .icons-slider--wrap .carousel-cell .icons-slider__item--item {
