@@ -31,11 +31,15 @@
         display: block;
         height: 210px;
         margin-bottom: 25px;
-        transition: .5s transform;
+        overflow: hidden;
 
-        @media (any-hover: hover) {
-            &:hover {
-                transform: scale(1.05);
+        img {
+            transition: .5s transform;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
         }
 
