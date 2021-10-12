@@ -161,7 +161,7 @@ section {
 
         @media (max-width: 600px) {
             margin: 10px 0;
-            grid-gap:0;
+            grid-gap: 0;
         }
     }
 
@@ -247,6 +247,7 @@ section {
 
     &.grid {
         grid-gap: 30px 15px;
+
         @media (max-width: 600px) {
             grid-gap: 15px;
         }
@@ -258,6 +259,19 @@ section {
         justify-content: center;
     }
 
+}
+
+.scroll-x {
+
+    @media (min-width: 1367px) {
+        .mCustomScrollBox {
+            overflow: inherit !important;
+        }
+
+        .mCSB_container {
+            overflow: inherit !important;
+        }
+    }
 }
 
 @media (max-width: 1025px) {
