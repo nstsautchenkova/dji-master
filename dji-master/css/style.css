@@ -8736,6 +8736,7 @@ table {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
+    margin-right: 0;
   }
 
   .product-info__buy .product-buy .product-card__add {

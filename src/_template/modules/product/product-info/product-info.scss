@@ -186,6 +186,7 @@
             @media(max-width: 600px) {
                 justify-content: space-between;
                 width: 100%;
+                margin-right: 0;
 
                 .product-card__add {
                     width: calc(50% - 5px);
