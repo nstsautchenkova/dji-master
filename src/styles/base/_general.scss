@@ -247,6 +247,9 @@ section {
 
     &.grid {
         grid-gap: 30px 15px;
+        @media (max-width: 600px) {
+            grid-gap: 15px;
+        }
     }
 
     .img {

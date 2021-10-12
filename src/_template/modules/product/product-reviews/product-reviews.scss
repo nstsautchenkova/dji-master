@@ -10,7 +10,12 @@
         padding-bottom: 22px;
         margin-bottom: 30px;
 
-        &.add-reviews{
+        @media(max-width: 575px) {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        &.add-reviews {
             border-bottom: 0;
             margin-bottom: 0;
         }
@@ -22,6 +27,12 @@
             display: flex;
             align-items: center;
             font-family: $font-500;
+
+            @media(max-width: 575px) {
+                width: 100%;
+                font-size: 14px;
+                line-height: 24px;
+            }
         }
 
         .reviews-number {
@@ -35,11 +46,22 @@
             margin-left: 10px;
             border: 1px solid $blue;
             border-radius: 3px;
+
+            @media(max-width: 575px) {
+                font-size: 12px;
+                padding: 1px 4px 0;
+            }
         }
 
         .info {
             display: flex;
             align-items: center;
+
+            @media(max-width: 575px) {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
         }
 
         .rating {

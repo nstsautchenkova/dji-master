@@ -656,6 +656,11 @@ if (basketValue == 0){
     $('.header__basket').addClass('header__basket--empty');
 }
 
+// preloader
+$(window).on('load', function() {
+    $('#preloader').delay(500).fadeToggle(500);
+});
+
 
 $(document).ready(function () {
     var productSliderThumbs = new Swiper(".product-slider__thumbs", {
@@ -706,30 +711,25 @@ $(window).load(function () {
     });
 });
 
+$(window).load(function () {
+    $.mCustomScrollbar.defaults.theme = "light-2";
+    $(".scroll-x").mCustomScrollbar({
+        axis: "x",
+        theme: "dark-3",
+        mouseWheel: false,
+        advanced: { autoExpandHorizontalScroll: true }
+    });
+});
+
 
 // adaptive
 $(document).on("ready", function () {
     if (window.matchMedia("(max-width: 1370px)").matches) {
-        //$(window).resize(function () { location.reload(); });
 
-
-        window.addEventListener("orientationchange", function() {
+        /* window.addEventListener("orientationchange", function() {
             $(window).resize(function () { location.reload(); });
-        }, false);
-
-
-        // scroll
-        $(window).load(function () {
-            $.mCustomScrollbar.defaults.theme = "light-2";
-            $(".scroll-x").mCustomScrollbar({
-                axis: "x",
-                theme: "dark-3",
-                mouseWheel: false,
-                advanced: { autoExpandHorizontalScroll: true }
-            });
-        });
-
-    } else { }
+        }, false); */
+    }
 
     if (window.matchMedia("(max-width: 600px)").matches) {
         //catalog-filter
@@ -742,7 +742,7 @@ $(document).on("ready", function () {
             $('.catalog-filter__select .tit').text(filterActiveTxt);
         });
 
-    } else { }
+    }
 });
 
 
