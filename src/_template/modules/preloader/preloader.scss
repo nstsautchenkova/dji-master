@@ -23,6 +23,7 @@
     -ms-flex-align: center;
     align-items: center;
     background-color: #fff;
+    /* display: none !important; */
 
     &__logo {
         transform: scale(1.5);
@@ -96,8 +97,8 @@
     background-color: $main-color;
     -webkit-animation-name: loader-animation;
     animation-name: loader-animation;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
     -webkit-animation-iteration-count: forwards;
     animation-iteration-count: forwards;
     -webkit-animation-timing-function: ease-in-out;

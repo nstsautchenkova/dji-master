@@ -3435,6 +3435,10 @@ form .form-group .input-group-val.input-focus .label-validation {
   opacity: 0;
 }
 
+form .form-group .input-group-val.input-group--textarea {
+  height: 144px;
+}
+
 form .form-group .label-validation {
   position: absolute;
   position: absolute;
@@ -5338,7 +5342,6 @@ table {
 }
 
 .product-recommended__img {
-  border: 1px solid #F7F8F9;
   width: 100px;
   height: 100px;
   margin: 0;
@@ -5519,11 +5522,12 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 10px;
 }
 
 .product-info__buy .product-buy .product-card__btn--basket {
   display: none;
-  width: 260px;
+  width: 265px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -5554,7 +5558,6 @@ table {
   height: 46px;
   font-size: 16px;
   line-height: 24px;
-  margin-right: 10px;
   width: 129px;
   font-family: "Museo Sans Cyrl 500";
   text-transform: inherit;
@@ -6991,6 +6994,7 @@ table {
   -ms-flex-align: center;
   align-items: center;
   background-color: #fff;
+  /* display: none !important; */
 }
 
 .preloader__logo {
@@ -7061,8 +7065,8 @@ table {
   background-color: #333333;
   -webkit-animation-name: loader-animation;
   animation-name: loader-animation;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-iteration-count: forwards;
   animation-iteration-count: forwards;
   -webkit-animation-timing-function: ease-in-out;

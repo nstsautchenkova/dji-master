@@ -328,13 +328,6 @@ $(window).load(function () {
 
 // adaptive
 $(document).on("ready", function () {
-    if (window.matchMedia("(max-width: 1370px)").matches) {
-
-        /* window.addEventListener("orientationchange", function() {
-            $(window).resize(function () { location.reload(); });
-        }, false); */
-    }
-
     if (window.matchMedia("(max-width: 600px)").matches) {
         //catalog-filter
         $(".catalog-filter").click(function () {

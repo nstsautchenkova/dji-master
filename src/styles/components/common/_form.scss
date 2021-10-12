@@ -116,6 +116,9 @@ form {
                     opacity: 0;
                 }
             }
+            &.input-group--textarea{
+                height: 144px;
+            }
         }
 
         .label-validation {
