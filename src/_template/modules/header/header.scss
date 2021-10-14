@@ -79,7 +79,7 @@
         position: relative;
         top: -1x;
 
-        @media(max-width: 992px) {
+        @media(max-width: 900px) {
             color: $white;
             font-size: 12px;
             line-height: 20px;
@@ -229,10 +229,18 @@
         margin-left: auto;
         margin-right: auto;
 
-        @media(max-width: 1024px) {
+        @media(max-width: 1420px) {
+            width: 500px;
+        }
+        @media(max-width: 1200px) {
             width: 385px;
         }
-
+        @media(max-width: 1024px) {
+            width: 365px;
+        }
+        @media(max-width: 960px) {
+            width: 305px;
+        }
         @media(max-width: 900px) {
             display: none;
         }

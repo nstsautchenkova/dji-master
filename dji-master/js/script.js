@@ -716,8 +716,13 @@ $(window).load(function () {
     $(".scroll-x").mCustomScrollbar({
         axis: "x",
         theme: "dark-3",
-        mouseWheel: false,
-        advanced: { autoExpandHorizontalScroll: true }
+        //mouseWheel: false,
+        mouseWheel: true,
+        horizontalScroll:true,
+        callback:true,
+        advanced: { 
+            autoExpandHorizontalScroll: true 
+        }
     });
 });
 

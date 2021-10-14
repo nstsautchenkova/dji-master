@@ -3,6 +3,11 @@
     max-width: 100%;
     padding: 0 $gap;
     margin: 0 auto;
+
+    @media (max-width: 1420px) {
+        width: 100%;
+        padding: 0 20px;
+    }
 }
 
 .wrapper {
@@ -39,6 +44,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 .col-lg-4 {
     @media(max-width: 1200px) {
         grid-template-columns: repeat(4, 1fr);
@@ -117,6 +123,7 @@
 .aife {
     align-items: flex-end;
 }
+
 .aib {
     align-items: baseline;
 }
