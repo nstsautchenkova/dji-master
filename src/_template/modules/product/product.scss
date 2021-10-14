@@ -31,7 +31,7 @@
     .product-title {
         display: none;
 
-        @media(max-width: 1200px) {
+        @media(max-width: 1420px) {
             display: block;
             margin-bottom: 25px;
 
@@ -75,7 +75,7 @@
         padding: 15px;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: 760px) {
         padding: 0;
         flex-wrap: wrap;
         margin-bottom: 10px;
