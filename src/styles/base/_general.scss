@@ -305,6 +305,9 @@ body {
 }
 
 .scroll-x {
+    @media(max-width: 1420px) {
+        margin-right: -30px;
+    }
 
     @media (min-width: 1367px) {
         .mCustomScrollBox {

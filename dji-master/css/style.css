@@ -7300,6 +7300,10 @@ table {
     padding: 0 20px;
   }
 
+  .scroll-x {
+    margin-right: -30px;
+  }
+
   .header .search-form {
     width: 500px;
   }
