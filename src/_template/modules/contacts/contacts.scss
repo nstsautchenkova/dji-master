@@ -26,17 +26,7 @@
     }
 
     &__item {
-        padding-right: 50px;
-
-        @media (max-width: 1024px) {
-            padding-right: 90px;
-            white-space: nowrap;
-        }
-
-        @media (max-width: 900px) {
-            padding-right: 70px;
-            white-space: nowrap;
-        }
+        white-space: nowrap;
     }
 
     &__tit {
@@ -83,4 +73,20 @@
             margin-right: 5px;
         }
     }
+}
+
+.contacts-info__item--adress{
+    width: 282px;
+}
+.contacts-info__item--phone{
+    width: 307px;
+}
+.contacts-info__item--working-hours{
+    width: 216px;
+}
+.contacts-info__item--email{
+    width: 222px;
+}
+.contacts-info__item--skype{
+    width: 139px;
 }

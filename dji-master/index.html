@@ -802,7 +802,7 @@
             </div>
         </div>
 
-        <div class="scroll-x">
+        <div class="about__cards--swiper">
             <div class="about__cards">
                 <div class="about-card">
                     <div class="about-card__img">
@@ -856,6 +856,7 @@
                 </div>
                 <!--.about-card-->
             </div>
+            <div class="swiper-scrollbar slider-scrollbar"></div>
         </div>
 
         <div class="grid about-card--horizontal_grid">
@@ -882,7 +883,7 @@
 
             <section class="product pt-0">
                 <div class="container">
-                    <div class="scroll-x">
+                    <div class="product--swiper-1">
                         <div class="product__cards product__cards--scroll">
                             <div class="product-card">
     <div class="product-card__labels">
@@ -911,7 +912,7 @@
     <div class="product-card__buttons grid col-2">
         <div class="counter">
             <input class="counter__btn minus-btn" value="-" readonly="readonly">
-            <input class="counter__input" value="1">
+            <input class="counter__input" value="1" maxlength="10">
             <input class="counter__btn plus-btn" value="+" readonly="readonly">
         </div>
         <button class="product-card__btn blue-btn product-card__add" type="button">В корзину</button>
@@ -984,7 +985,7 @@
     <div class="product-card__buttons grid col-2">
         <div class="counter">
             <input class="counter__btn minus-btn" value="-" readonly="readonly">
-            <input class="counter__input" value="1">
+            <input class="counter__input" value="1" maxlength="10">
             <input class="counter__btn plus-btn" value="+" readonly="readonly">
         </div>
         <button class="product-card__btn blue-btn product-card__add" type="button">В корзину</button>
@@ -1020,7 +1021,7 @@
     <div class="product-card__buttons grid col-2">
         <div class="counter">
             <input class="counter__btn minus-btn" value="-" readonly="readonly">
-            <input class="counter__input" value="1">
+            <input class="counter__input" value="1" maxlength="10">
             <input class="counter__btn plus-btn" value="+" readonly="readonly">
         </div>
         <button class="product-card__btn blue-btn product-card__add" type="button">В корзину</button>
@@ -1065,6 +1066,7 @@
     <button type="button" class="product-card__btn red-btn product-card__btn--preorder" data-toggle="modal" data-animation="bounce" data-target=".modal-preorder">Предзаказ</button>
 </div><!-- .product-card -->
                         </div>
+                        <div class="swiper-scrollbar slider-scrollbar"></div>
                     </div>
                 </div>
             </section>
@@ -1076,7 +1078,7 @@
                             Акции и спецпредложения
                         </h2>
                     </div>
-                    <div class="scroll-x">
+                    <div class="product--swiper-2">
                         <div class="product__cards product__cards--scroll">
                             <div class="product-card">
     <div class="product-card__labels">
@@ -1105,7 +1107,7 @@
     <div class="product-card__buttons grid col-2">
         <div class="counter">
             <input class="counter__btn minus-btn" value="-" readonly="readonly">
-            <input class="counter__input" value="1">
+            <input class="counter__input" value="1" maxlength="10">
             <input class="counter__btn plus-btn" value="+" readonly="readonly">
         </div>
         <button class="product-card__btn blue-btn product-card__add" type="button">В корзину</button>
@@ -1176,7 +1178,7 @@
     <div class="product-card__buttons grid col-2">
         <div class="counter">
             <input class="counter__btn minus-btn" value="-" readonly="readonly">
-            <input class="counter__input" value="1">
+            <input class="counter__input" value="1" maxlength="10">
             <input class="counter__btn plus-btn" value="+" readonly="readonly">
         </div>
         <button class="product-card__btn blue-btn product-card__add" type="button">В корзину</button>
@@ -1212,7 +1214,7 @@
     <div class="product-card__buttons grid col-2">
         <div class="counter">
             <input class="counter__btn minus-btn" value="-" readonly="readonly">
-            <input class="counter__input" value="1">
+            <input class="counter__input" value="1" maxlength="10">
             <input class="counter__btn plus-btn" value="+" readonly="readonly">
         </div>
         <button class="product-card__btn blue-btn product-card__add" type="button">В корзину</button>
@@ -1257,6 +1259,7 @@
     <button type="button" class="product-card__btn red-btn product-card__btn--preorder" data-toggle="modal" data-animation="bounce" data-target=".modal-preorder">Предзаказ</button>
 </div><!-- .product-card -->
                         </div>
+                        <div class="swiper-scrollbar slider-scrollbar"></div>
                     </div>
                 </div>
             </section>
@@ -1268,7 +1271,7 @@
         </div>
 
         <div class="news__content">
-            <div class="scroll-x">
+            <div class="news--swiper">
                 <div class="news__cards">
                     <article class="news-card">
     <a href="article.html" class="news-card__img">
@@ -1307,6 +1310,7 @@
     </h6>
 </article>
                 </div>
+                <div class="swiper-scrollbar slider-scrollbar"></div>
             </div>
 
             <div style="text-align: center;">
@@ -1431,7 +1435,7 @@
         <input type="text" placeholder="Номер телефона" class="form-control form-required">
         <div class="validation">Поле обязательно для заполнения</div>
     </div>
-    <button type="button" class="blue-btn width-100 form-submit">Заказать звонок</button>
+    <button type="button" class="form__btn blue-btn form-submit">Заказать звонок</button>
 </form>
             </div>
         </div>
@@ -1463,7 +1467,7 @@
         <input type="email" placeholder="E-mail" class="form-control form-required">
         <div class="validation">Поле обязательно для заполнения</div>
     </div>
-    <button type="button" class="blue-btn width-100 form-submit">Сообщить о поступлении</button>
+    <button type="button" class="form__btn blue-btn form-submit">Сообщить о поступлении</button>
 </form>
             </div>
         </div>
@@ -1494,7 +1498,7 @@
         <input type="tel" placeholder="Номер телефона" class="form-control form-required">
         <div class="validation">Поле обязательно для заполнения</div>
     </div>
-    <button type="button" class="blue-btn width-100 form-submit">Отправить</button>
+    <button type="button" class="form__btn blue-btn form-submit">Отправить</button>
 </form>
             </div>
         </div>

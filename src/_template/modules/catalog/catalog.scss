@@ -5,6 +5,22 @@
         display: grid;
         grid-template-columns: repeat(8, 160px);
         grid-gap: 18px;
+
+        @media(max-width: 1420px) {
+            grid-template-columns: repeat(7, 160px);
+        }
+
+        @media(max-width: 1320px) {
+            grid-template-columns: repeat(6, 160px);
+        }
+
+        @media(max-width: 1220px) {
+            grid-template-columns: repeat(5, 160px);
+        }
+
+        @media(max-width: 900px) {
+            grid-template-columns: repeat(4, 160px);
+        }
     }
 
     &__item {
@@ -34,20 +50,24 @@
     &__select {
         display: none;
     }
+
     @media (max-width: 1250px) {
         &__list {
             grid-template-columns: repeat(6, 160px);
             grid-gap: 20px 6px;
         }
     }
+
     @media (max-width: 900px) {
         &__list {
             grid-template-columns: repeat(4, 160px);
             grid-gap: 20px 33px;
         }
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 750px) {
         padding: 25px 0 10px;
+
         &__select {
             display: flex;
             align-items: center;

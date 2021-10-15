@@ -343,3 +343,33 @@ body {
         padding-top: 88px;
     }
 }
+
+.swiper-wrapper {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.slider-scrollbar {
+    position: relative !important;
+    background: transparent;
+    border-radius: 5px;
+    height: 5px !important;
+    bottom: 0 !important;
+    margin-top: 10px;
+    display: none;
+
+    @media(max-width: 1370px) {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .swiper-scrollbar-drag {
+        background: $blue;
+        border-radius: 5px;
+    }
+}
+.swiper-initialized{
+    .slider-scrollbar{
+        display: block;
+    }
+}
