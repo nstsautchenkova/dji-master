@@ -9249,6 +9249,11 @@ table {
     margin-bottom: 16px;
   }
 
+  .product-card {
+    min-height: 307px;
+    padding: 70px 20px 20px;
+  }
+
   .product .product-card__price-block {
     min-height: 46px;
   }
@@ -9553,11 +9558,6 @@ table {
   .product .product__cards--scroll .product-card__btn {
     font-size: 12px;
     line-height: 16px;
-  }
-
-  .product-card {
-    min-height: 307px;
-    padding: 70px 20px 20px;
   }
 
   .product-card__labels {
