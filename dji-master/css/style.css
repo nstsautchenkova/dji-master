@@ -5184,6 +5184,14 @@ table {
   max-height: 196px;
 }
 
+.about-card--horizontal .about-card__content {
+  height: 100%;
+}
+
+.about-card--horizontal .about-card__img {
+  height: 100%;
+}
+
 .product {
   /* .product__cards--default */
   /* product__cards--scroll */
