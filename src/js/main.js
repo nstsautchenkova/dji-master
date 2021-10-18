@@ -108,7 +108,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     const bannerSlider = new Swiper('.banner-slider', {
-        slidesPerView: 1,
+        //slidesPerView: 1,
         longSwipesRatio:0.1,
         navigation: {
             nextEl: '.swiper-button-next',
