@@ -7006,6 +7006,10 @@ table {
   display: none;
 }
 
+.catalog-filter--mobile {
+  display: none;
+}
+
 .news {
   background: #ffffff;
 }
@@ -8846,6 +8850,10 @@ table {
   }
 
   .catalog-filter {
+    display: none;
+  }
+
+  .catalog-filter {
     padding: 25px 0 10px;
   }
 
@@ -8896,6 +8904,10 @@ table {
   .catalog-filter__item:hover {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
+  }
+
+  .catalog-filter--mobile {
+    display: block;
   }
 }
 

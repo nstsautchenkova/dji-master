@@ -1,6 +1,10 @@
 .catalog-filter {
     padding: 25px 0 30px;
 
+    @media (max-width: 750px) {
+        display: none;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(8, 160px);
@@ -113,4 +117,12 @@
         }
     }
 
+}
+
+.catalog-filter--mobile {
+    display: none;
+
+    @media (max-width: 750px) {
+        display: block;
+    }
 }
