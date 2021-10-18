@@ -272,6 +272,7 @@ $(document).ready(function () {
         direction: "vertical",
 
         spaceBetween: 15,
+        longSwipesRatio:0.1,
         scrollbar: {
             el: ".swiper-scrollbar",
         },
@@ -284,6 +285,7 @@ $(document).ready(function () {
     var productSliderProduct = new Swiper(".product-slider__product", {
         loop: true,
         spaceBetween: 10,
+        longSwipesRatio:0.1,
         grabCursor: true,
         effect: "creative",
         creativeEffect: {
