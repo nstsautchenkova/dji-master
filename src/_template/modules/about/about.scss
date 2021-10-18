@@ -409,6 +409,13 @@
 }
 
 .about-card--horizontal{
+    height: 420px;
+    @media (max-width: 1370px){
+        height: 398px;
+    }
+    @media (max-width: 770px){
+        height: auto;
+    }
     .about-card__content{
         height: 100%;
     }

@@ -5184,6 +5184,10 @@ table {
   max-height: 196px;
 }
 
+.about-card--horizontal {
+  height: 420px;
+}
+
 .about-card--horizontal .about-card__content {
   height: 100%;
 }
@@ -7578,6 +7582,10 @@ table {
     margin-top: 10px;
     display: block;
   }
+
+  .about-card--horizontal {
+    height: 398px;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -8449,6 +8457,10 @@ table {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 27px;
+  }
+
+  .about-card--horizontal {
+    height: auto;
   }
 
   .product-card__labels {
