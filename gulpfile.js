@@ -106,14 +106,14 @@ function js() {
 
 function images() {
     return src(path.src.img)
-        .pipe(
+        /* .pipe(
             imagemin({
                 progressive: true,
                 svgoPlugins: [{ removeViewBox: false }],
                 interPlaced: true,
-                optimizationLevel: 3 // 0 to 7
+                optimizationLevel: 0 // 0 to 7
             })
-        )
+        ) */
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream());
 }

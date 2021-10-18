@@ -5051,6 +5051,10 @@ table {
   height: 225px;
 }
 
+.about-card__img img {
+  min-height: 100%;
+}
+
 .about-card__bg-img {
   width: 100%;
   height: 100%;
