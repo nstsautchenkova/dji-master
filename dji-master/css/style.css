@@ -6347,6 +6347,7 @@ table {
   padding: 10px 40px;
   font-size: 14px;
   line-height: 24px;
+  margin-top: 30px;
 }
 
 .news-card {
@@ -7048,6 +7049,7 @@ table {
   padding: 10px 40px;
   font-size: 14px;
   line-height: 24px;
+  margin-top: 30px;
 }
 
 .news-card {
@@ -7592,6 +7594,14 @@ table {
 
   .about-card--horizontal {
     height: 398px;
+  }
+
+  .news__btn {
+    margin-top: 0;
+  }
+
+  .news__btn {
+    margin-top: 0;
   }
 }
 
