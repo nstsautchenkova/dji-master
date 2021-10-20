@@ -8058,7 +8058,7 @@ table {
   }
 
   .form__btn {
-    width: 200px;
+    width: auto;
   }
 }
 
@@ -9379,10 +9379,6 @@ table {
   .form-container {
     width: 100%;
     margin-top: 20px;
-  }
-
-  .form__btn {
-    width: 100%;
   }
 
   .form__footer {
