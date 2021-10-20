@@ -469,29 +469,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // Counter
-    const minusBtn = document.querySelectorAll('.minus-btn');
-    const plusBtn = document.querySelectorAll('.plus-btn');
-    let count = 1;
-
-    for (let i = 0; i < minusBtn.length; i++) {
-        let input = minusBtn[i].nextElementSibling;
-        minusBtn[i].addEventListener('click', () => {
-            if (count > 1) {
-                count--;
-                input.value = count;
-            }
-        });
-    }
-
-    for (let i = 0; i < plusBtn.length; i++) {
-        let input = plusBtn[i].previousElementSibling;
-        plusBtn[i].addEventListener('click', (e) => {
-            count++;
-            input.value = count;
-        });
-    }
-
     // Sliders
     const iconsSlider = new Swiper('.icons-slider', {
         slidesPerView: 'auto',
@@ -906,3 +883,21 @@ $(".catalog-filter--mobile").click(function () {
     $('.catalog-filter--mobile .catalog-filter__select .tit').text(filterActiveTxt);
 });
 
+
+//Минус плюс
+$(document).ready(function() {
+    $('.counter .minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.counter .plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+});	
